@@ -27,7 +27,7 @@ Public Class Form1
 
                     cmd.Parameters.AddWithValue("@title", TextBoxTitle.Text)
                     cmd.Parameters.AddWithValue("@artist", TextBoxArtist.Text)
-                    cmd.Parameters.AddWithValue("@duration", TextBoxDuration.Text)
+                    cmd.Parameters.AddWithValue("@duration", CInt(TextBoxDuration.Text))
                     cmd.Parameters.AddWithValue("@genre", ComboBoxGenre.Text)
                     cmd.ExecuteNonQuery()
                     MessageBox.Show("Record insert successfully!")
@@ -110,9 +110,9 @@ Public Class Form1
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@id", CInt(TextBoxId.Text))
                     cmd.Parameters.AddWithValue("@title", TextBoxTitle.Text)
-                    cmd.Parameters.AddWithValue("@author", TextBoxArtist.Text)
-                    cmd.Parameters.AddWithValue("@category", TextBoxDuration.Text)
-                    cmd.Parameters.AddWithValue("@availability", ComboBoxGenre.Text)
+                    cmd.Parameters.AddWithValue("@artist", TextBoxArtist.Text)
+                    cmd.Parameters.AddWithValue("@duration", CInt(TextBoxDuration.Text))
+                    cmd.Parameters.AddWithValue("@genre", ComboBoxGenre.Text)
                     cmd.ExecuteNonQuery()
                     MessageBox.Show("Record updated successfully!")
                 End Using
@@ -150,4 +150,7 @@ Public Class Form1
         End Try
     End Sub
 
-    End Class
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+End Class

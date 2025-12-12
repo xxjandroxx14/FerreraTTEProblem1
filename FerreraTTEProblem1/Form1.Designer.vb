@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TextBoxTitle = New System.Windows.Forms.TextBox()
         Me.TextBoxArtist = New System.Windows.Forms.TextBox()
         Me.TextBoxDuration = New System.Windows.Forms.TextBox()
@@ -41,101 +42,120 @@ Partial Class Form1
         '
         'TextBoxTitle
         '
-        Me.TextBoxTitle.Location = New System.Drawing.Point(177, 74)
+        Me.TextBoxTitle.BackColor = System.Drawing.Color.SeaShell
+        Me.TextBoxTitle.Location = New System.Drawing.Point(156, 74)
         Me.TextBoxTitle.Name = "TextBoxTitle"
         Me.TextBoxTitle.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxTitle.TabIndex = 0
         '
         'TextBoxArtist
         '
-        Me.TextBoxArtist.Location = New System.Drawing.Point(177, 128)
+        Me.TextBoxArtist.BackColor = System.Drawing.Color.SeaShell
+        Me.TextBoxArtist.Location = New System.Drawing.Point(156, 128)
         Me.TextBoxArtist.Name = "TextBoxArtist"
         Me.TextBoxArtist.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxArtist.TabIndex = 1
         '
         'TextBoxDuration
         '
-        Me.TextBoxDuration.Location = New System.Drawing.Point(177, 180)
+        Me.TextBoxDuration.BackColor = System.Drawing.Color.SeaShell
+        Me.TextBoxDuration.Location = New System.Drawing.Point(156, 180)
         Me.TextBoxDuration.Name = "TextBoxDuration"
         Me.TextBoxDuration.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxDuration.TabIndex = 2
         '
         'ComboBoxGenre
         '
+        Me.ComboBoxGenre.BackColor = System.Drawing.Color.SeaShell
         Me.ComboBoxGenre.FormattingEnabled = True
         Me.ComboBoxGenre.Items.AddRange(New Object() {"Pop", "Rock", "Jazz", "Hip-Hop", "Classical"})
-        Me.ComboBoxGenre.Location = New System.Drawing.Point(156, 232)
+        Me.ComboBoxGenre.Location = New System.Drawing.Point(156, 237)
         Me.ComboBoxGenre.Name = "ComboBoxGenre"
-        Me.ComboBoxGenre.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxGenre.Size = New System.Drawing.Size(100, 21)
         Me.ComboBoxGenre.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(78, 74)
+        Me.Label1.BackColor = System.Drawing.Color.Tan
+        Me.Label1.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(47, 74)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(61, 13)
+        Me.Label1.Size = New System.Drawing.Size(79, 18)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Track Title:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(78, 128)
+        Me.Label2.BackColor = System.Drawing.Color.Tan
+        Me.Label2.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(84, 130)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(30, 13)
+        Me.Label2.Size = New System.Drawing.Size(42, 18)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Artist"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(72, 240)
+        Me.Label3.BackColor = System.Drawing.Color.Tan
+        Me.Label3.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(79, 240)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(36, 13)
+        Me.Label3.Size = New System.Drawing.Size(45, 18)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Genre"
         '
         'ButtonAdd
         '
-        Me.ButtonAdd.Location = New System.Drawing.Point(336, 320)
+        Me.ButtonAdd.BackColor = System.Drawing.Color.YellowGreen
+        Me.ButtonAdd.Font = New System.Drawing.Font("Trebuchet MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonAdd.Location = New System.Drawing.Point(308, 320)
         Me.ButtonAdd.Name = "ButtonAdd"
         Me.ButtonAdd.Size = New System.Drawing.Size(75, 23)
         Me.ButtonAdd.TabIndex = 7
         Me.ButtonAdd.Text = "Add"
-        Me.ButtonAdd.UseVisualStyleBackColor = True
+        Me.ButtonAdd.UseVisualStyleBackColor = False
         '
         'ButtonUpdate
         '
-        Me.ButtonUpdate.Location = New System.Drawing.Point(438, 320)
+        Me.ButtonUpdate.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.ButtonUpdate.Font = New System.Drawing.Font("Trebuchet MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonUpdate.Location = New System.Drawing.Point(416, 320)
         Me.ButtonUpdate.Name = "ButtonUpdate"
         Me.ButtonUpdate.Size = New System.Drawing.Size(75, 23)
         Me.ButtonUpdate.TabIndex = 8
         Me.ButtonUpdate.Text = "Update"
-        Me.ButtonUpdate.UseVisualStyleBackColor = True
+        Me.ButtonUpdate.UseVisualStyleBackColor = False
         '
         'ButtonDelete
         '
-        Me.ButtonDelete.Location = New System.Drawing.Point(533, 320)
+        Me.ButtonDelete.BackColor = System.Drawing.Color.OrangeRed
+        Me.ButtonDelete.Font = New System.Drawing.Font("Trebuchet MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonDelete.Location = New System.Drawing.Point(525, 320)
         Me.ButtonDelete.Name = "ButtonDelete"
         Me.ButtonDelete.Size = New System.Drawing.Size(75, 23)
         Me.ButtonDelete.TabIndex = 9
         Me.ButtonDelete.Text = "Delete"
-        Me.ButtonDelete.UseVisualStyleBackColor = True
+        Me.ButtonDelete.UseVisualStyleBackColor = False
         '
         'ButtonLoad
         '
-        Me.ButtonLoad.Location = New System.Drawing.Point(644, 320)
+        Me.ButtonLoad.BackColor = System.Drawing.SystemColors.Info
+        Me.ButtonLoad.Font = New System.Drawing.Font("Trebuchet MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonLoad.Location = New System.Drawing.Point(633, 320)
         Me.ButtonLoad.Name = "ButtonLoad"
         Me.ButtonLoad.Size = New System.Drawing.Size(75, 23)
         Me.ButtonLoad.TabIndex = 10
         Me.ButtonLoad.Text = "Load"
-        Me.ButtonLoad.UseVisualStyleBackColor = True
+        Me.ButtonLoad.UseVisualStyleBackColor = False
         '
         'DataGridView1
         '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.SeaShell
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(308, 32)
+        Me.DataGridView1.Location = New System.Drawing.Point(328, 22)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(449, 263)
         Me.DataGridView1.TabIndex = 11
@@ -143,15 +163,17 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(78, 180)
+        Me.Label4.BackColor = System.Drawing.Color.Tan
+        Me.Label4.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(63, 182)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(47, 13)
+        Me.Label4.Size = New System.Drawing.Size(61, 18)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Duration"
         '
         'TextBoxId
         '
-        Me.TextBoxId.Location = New System.Drawing.Point(177, 22)
+        Me.TextBoxId.Location = New System.Drawing.Point(-6, 2)
         Me.TextBoxId.Name = "TextBoxId"
         Me.TextBoxId.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxId.TabIndex = 13
@@ -161,7 +183,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(800, 360)
         Me.Controls.Add(Me.TextBoxId)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.DataGridView1)
